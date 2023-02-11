@@ -1,8 +1,8 @@
 decord >= 0.4.1
 einops
 matplotlib
-numpy
-opencv-contrib-python
+numpy==1.21.5
+# opencv-contrib-python
 Pillow
-scipy
+scipy==1.6.0
 torch>=1.3

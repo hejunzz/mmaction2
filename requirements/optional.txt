@@ -4,8 +4,8 @@ imgaug
 librosa
 lmdb
 moviepy==1.0.3
-onnx
-onnxruntime
+# onnx
+# onnxruntime
 packaging
 pims
 PyTurboJPEG
