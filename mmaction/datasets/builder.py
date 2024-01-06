@@ -8,7 +8,7 @@ import torch
 from ..parallel import collate
 from mmengine.dist.utils import get_dist_info, init_dist
 from mmengine.utils.version_utils import digit_version
-from mmengine.registry import Registry, build_from_cfg
+from ..registry import Registry, build_from_cfg
 
 from torch.utils.data import DataLoader
 

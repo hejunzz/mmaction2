@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 # from mmcv.utils import Registry, build_from_cfg
-from mmengine.registry import Registry, build_from_cfg
+from ..registry import Registry, build_from_cfg
 
 MODULE_HOOKS = Registry('module_hooks')
 

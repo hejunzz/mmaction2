@@ -3,10 +3,10 @@ import warnings
 
 # from mmcv.cnn import MODELS as MMCV_MODELS
 # from mmcv.utils import Registry
-from mmengine.registry import MODELS as MMCV_MODELS
-from mmengine.registry import Registry
+# from ..registry import MODELS as MMCV_MODELS
+from ..registry import Registry
 
-MODELS = Registry('models', parent=MMCV_MODELS)
+MODELS = Registry('models', parent=None)
 BACKBONES = MODELS
 NECKS = MODELS
 HEADS = MODELS
