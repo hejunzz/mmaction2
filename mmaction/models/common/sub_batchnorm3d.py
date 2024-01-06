@@ -3,7 +3,7 @@ from copy import deepcopy
 
 import torch
 import torch.nn as nn
-from ..registry import NORM_LAYERS
+from ...registry import NORM_LAYERS
 
 
 @NORM_LAYERS.register_module()

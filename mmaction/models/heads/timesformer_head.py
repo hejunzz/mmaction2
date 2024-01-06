@@ -1,6 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch.nn as nn
-from mmcv.cnn import trunc_normal_init
+from mmengine.model.weight_init import trunc_normal_init
 
 from ..builder import HEADS
 from .base import BaseHead

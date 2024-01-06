@@ -1,5 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmcv.runner import OPTIMIZERS
+from ...registry import OPTIMIZERS
 from torch.optim import SGD
 
 

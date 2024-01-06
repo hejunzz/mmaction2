@@ -14,3 +14,6 @@ ATTENTION = Registry('attention')
 FEEDFORWARD_NETWORK = Registry('feed-forward Network')
 TRANSFORMER_LAYER = Registry('transformerLayer')
 TRANSFORMER_LAYER_SEQUENCE = Registry('transformer-layers sequence')
+
+OPTIMIZERS = Registry('optimizer')
+OPTIMIZER_BUILDERS = Registry('optimizer builder')

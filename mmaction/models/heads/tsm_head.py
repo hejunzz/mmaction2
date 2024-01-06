@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-from mmcv.cnn import normal_init
+from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
 
 from ..builder import HEADS
 from .base import AvgConsensus, BaseHead

@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch.nn as nn
 from mmcv.cnn import build_norm_layer
-from ..registry import CONV_LAYERS
+from ...registry import CONV_LAYERS
 from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
 
 from torch.nn.modules.utils import _triple

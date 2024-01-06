@@ -5,7 +5,7 @@ from einops import rearrange
 from mmcv.cnn import build_norm_layer
 from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
 
-from ..registry import ATTENTION, FEEDFORWARD_NETWORK
+from ...registry import ATTENTION, FEEDFORWARD_NETWORK
 from mmcv.cnn.bricks.transformer import FFN, build_dropout
 from mmengine.model.base_module import BaseModule
 from mmengine.utils.version_utils import digit_version
