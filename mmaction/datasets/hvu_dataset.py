@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 import mmcv
 import numpy as np
-from mmcv.utils import print_log
+from ..utils import print_log
 
 from ..core import mean_average_precision
 from .base import BaseDataset

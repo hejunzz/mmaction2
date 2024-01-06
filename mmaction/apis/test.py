@@ -9,7 +9,7 @@ import warnings
 import mmcv
 import torch
 import torch.distributed as dist
-from mmcv.runner import get_dist_info
+from mmengine.dist.utils import get_dist_info, init_dist
 
 try:
     from mmcv.engine import (collect_results_cpu, collect_results_gpu,

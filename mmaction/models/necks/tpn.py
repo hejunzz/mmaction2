@@ -2,7 +2,9 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from mmcv.cnn import ConvModule, constant_init, normal_init, xavier_init
+from mmcv.cnn import ConvModule
+
+from mmengine.model.weight_init import constant_init, xavier_init, normal_init
 
 from ..builder import NECKS, build_loss
 

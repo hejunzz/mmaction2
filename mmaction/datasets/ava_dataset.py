@@ -7,7 +7,7 @@ from datetime import datetime
 
 import mmcv
 import numpy as np
-from mmcv.utils import print_log
+from ..utils import print_log
 
 from ..core.evaluation.ava_utils import ava_eval, read_labelmap, results2csv
 from ..utils import get_root_logger

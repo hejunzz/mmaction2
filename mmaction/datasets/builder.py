@@ -5,9 +5,11 @@ from functools import partial
 
 import numpy as np
 import torch
-from mmcv.parallel import collate
-from mmcv.runner import get_dist_info
-from mmcv.utils import Registry, build_from_cfg, digit_version
+from ..parallel import collate
+from mmengine.dist.utils import get_dist_info, init_dist
+from mmengine.utils.version_utils import digit_version
+from mmengine.registry import Registry, build_from_cfg
+
 from torch.utils.data import DataLoader
 
 from ..utils.multigrid import ShortCycleSampler

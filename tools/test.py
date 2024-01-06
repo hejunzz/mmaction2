@@ -9,7 +9,8 @@ import torch
 from mmcv import Config, DictAction
 from mmcv.cnn import fuse_conv_bn
 from mmcv.fileio.io import file_handlers
-from mmcv.runner import get_dist_info, init_dist, load_checkpoint
+from mmengine.dist.utils import get_dist_info, init_dist
+from mmengine.runner import load_checkpoint
 from mmcv.runner.fp16_utils import wrap_fp16_model
 
 from mmaction.datasets import build_dataloader, build_dataset

@@ -40,7 +40,8 @@ except (ImportError, ModuleNotFoundError):
 
 if not from_mmcv:
 
-    from mmcv.runner import Hook
+    # from mmcv.runner import Hook
+    from mmengine.hooks import Hook
 
     class EvalHook(Hook):  # noqa: F811
         """Non-Distributed evaluation hook.

@@ -10,8 +10,9 @@ import mmcv
 import torch
 import torch.distributed as dist
 from mmcv import Config, DictAction
-from mmcv.runner import get_dist_info, init_dist, set_random_seed
-from mmcv.utils import get_git_hash
+from mmengine.dist.utils import get_dist_info, init_dist
+from mmengine.runner import set_random_seed
+from mmengine.utils import get_git_hash
 
 from mmaction import __version__
 from mmaction.apis import init_random_seed, train_model

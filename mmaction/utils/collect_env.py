@@ -1,6 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmcv.utils import collect_env as collect_basic_env
-from mmcv.utils import get_git_hash
+# from mmcv.utils import collect_env as collect_basic_env
+from mmengine.utils.dl_utils import collect_env as collect_basic_env
+from mmengine.utils import get_git_hash
+# from mmcv.utils import get_git_hash
 
 import mmaction
 

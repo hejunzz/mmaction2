@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-from mmcv import ConfigDict
+from mmengine.config import ConfigDict
 
 
 class BaseTestDataset:

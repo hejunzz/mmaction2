@@ -8,7 +8,7 @@ from collections import OrderedDict, defaultdict
 import mmcv
 import numpy as np
 import torch
-from mmcv.utils import print_log
+from ..utils import print_log
 from torch.utils.data import Dataset
 
 from ..core import (mean_average_precision, mean_class_accuracy,

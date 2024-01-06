@@ -4,7 +4,7 @@ import pytest
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv import ConfigDict
+from mmengine.config import ConfigDict
 from numpy.testing import assert_almost_equal, assert_array_almost_equal
 from torch.autograd import Variable
 

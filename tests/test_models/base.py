@@ -4,7 +4,7 @@ import os.path as osp
 import mmcv
 import numpy as np
 import torch
-from mmcv.utils import _BatchNorm
+from .utils import _BatchNorm
 
 
 def check_norm_state(modules, train_state):

@@ -8,7 +8,7 @@ import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.runner import auto_fp16
-from mmcv.utils import digit_version
+from mmengine.utils.version_utils import digit_version
 
 from .. import builder
 

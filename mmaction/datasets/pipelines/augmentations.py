@@ -6,7 +6,8 @@ from collections.abc import Sequence
 import cv2
 import mmcv
 import numpy as np
-from mmcv.utils import digit_version
+from mmengine.utils.version_utils import digit_version
+
 from torch.nn.modules.utils import _pair
 
 from ..builder import PIPELINES

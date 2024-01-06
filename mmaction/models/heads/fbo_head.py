@@ -3,9 +3,13 @@ import copy
 
 import torch
 import torch.nn as nn
-from mmcv.cnn import ConvModule, constant_init, kaiming_init
-from mmcv.runner import load_checkpoint
-from mmcv.utils import _BatchNorm
+from mmcv.cnn import ConvModule
+
+from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
+from mmengine.runner.checkpoint import _load_checkpoint, load_checkpoint
+
+
+from ...utils import _BatchNorm
 
 from mmaction.models.common import LFB
 from mmaction.utils import get_root_logger

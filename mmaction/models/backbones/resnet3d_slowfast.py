@@ -3,9 +3,12 @@ import warnings
 
 import torch
 import torch.nn as nn
-from mmcv.cnn import ConvModule, kaiming_init
-from mmcv.runner import _load_checkpoint, load_checkpoint
-from mmcv.utils import print_log
+from mmcv.cnn import ConvModule
+from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
+
+from mmengine.runner import load_checkpoint
+from mmengine.runner.checkpoint import _load_checkpoint
+from ...utils import print_log
 
 from ...utils import get_root_logger
 from ..builder import BACKBONES

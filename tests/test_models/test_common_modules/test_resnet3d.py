@@ -76,7 +76,7 @@ def test_resnet3d_backbone():
     resnet3d_50_pretrain.init_weights()
     resnet3d_50_pretrain.train()
     assert check_norm_state(resnet3d_50_pretrain.modules(), False)
-    from mmcv.runner import _load_checkpoint
+    from mmengine.runner.checkpoint import _load_checkpoint, load_checkpoint
     chkp_2d = _load_checkpoint('torchvision://resnet50')
     for name, module in resnet3d_50_pretrain.named_modules():
         if len(name.split('.')) == 4:

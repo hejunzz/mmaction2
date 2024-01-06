@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch.nn as nn
 from mmcv.cnn import ConvModule
-from mmcv.utils import _BatchNorm
+from ...utils import _BatchNorm
 
 from ..builder import BACKBONES
 from .resnet3d import Bottleneck3d, ResNet3d

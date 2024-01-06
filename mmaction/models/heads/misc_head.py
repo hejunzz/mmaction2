@@ -1,8 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-from mmcv.cnn import ConvModule, constant_init, kaiming_init
-from mmcv.utils import _BatchNorm
+from mmcv.cnn import ConvModule
+from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
+
+from ...utils import _BatchNorm
 
 try:
     from mmdet.models.builder import SHARED_HEADS as MMDET_SHARED_HEADS

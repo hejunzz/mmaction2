@@ -3,10 +3,10 @@ import math
 
 import torch.nn as nn
 import torch.utils.checkpoint as cp
-from mmcv.cnn import (ConvModule, Swish, build_activation_layer, constant_init,
-                      kaiming_init)
-from mmcv.runner import load_checkpoint
-from mmcv.utils import _BatchNorm
+from mmcv.cnn import (ConvModule, Swish, build_activation_layer)
+from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
+from mmengine.runner.checkpoint import _load_checkpoint, load_checkpoint
+from ...utils import _BatchNorm
 
 from ...utils import get_root_logger
 from ..builder import BACKBONES

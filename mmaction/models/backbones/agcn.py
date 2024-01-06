@@ -3,8 +3,10 @@ import math
 
 import torch
 import torch.nn as nn
-from mmcv.cnn import constant_init, kaiming_init, normal_init
-from mmcv.runner import load_checkpoint
+from mmengine.model.weight_init import constant_init, kaiming_init, normal_init
+from mmengine.runner import load_checkpoint
+# from mmcv.cnn import constant_init, kaiming_init, normal_init
+# from mmcv.runner import load_checkpoint
 
 from ...utils import get_root_logger
 from ..builder import BACKBONES
