@@ -1,5 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmcv.runner import HOOKS, Hook
+# from mmcv.runner import HOOKS, Hook
+from mmengine.hooks import Hook
+from .longshortcyclehook import HOOKS
 
 
 def aggregate_sub_bn_status(module):

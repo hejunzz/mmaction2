@@ -9,9 +9,10 @@ import warnings
 import mmcv
 import numpy as np
 import torch
-from mmcv.fileio import FileClient
+from mmengine.fileio.file_client import FileClient
 from torch.nn.modules.utils import _pair
 
+from mmaction.misc import is_tuple_of
 from ...utils import get_random_string, get_shm_dir, get_thread_id
 from ..builder import PIPELINES
 
@@ -508,7 +509,7 @@ class SampleProposalFrames(SampleFrames):
         self.body_segments = body_segments
         self.aug_segments = aug_segments
         self.aug_ratio = _pair(aug_ratio)
-        if not mmcv.is_tuple_of(self.aug_ratio, (int, float)):
+        if not is_tuple_of(self.aug_ratio, (int, float)):
             raise TypeError(f'aug_ratio should be int, float'
                             f'or tuple of int and float, '
                             f'but got {type(aug_ratio)}')

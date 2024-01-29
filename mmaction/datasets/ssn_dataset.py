@@ -15,6 +15,7 @@ from ..utils import get_root_logger
 from .base import BaseDataset
 from .builder import DATASETS
 
+from mmaction.misc import is_tuple_of
 
 class SSNInstance:
     """Proposal instance of SSN.
@@ -222,7 +223,7 @@ class SSNDataset(BaseDataset):
         self.body_segments = body_segments
         self.aug_segments = aug_segments
         self.aug_ratio = _pair(aug_ratio)
-        if not mmcv.is_tuple_of(self.aug_ratio, (int, float)):
+        if not is_tuple_of(self.aug_ratio, (int, float)):
             raise TypeError(f'aug_ratio should be int, float'
                             f'or tuple of int and float, '
                             f'but got {type(aug_ratio)}')

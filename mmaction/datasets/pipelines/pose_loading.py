@@ -3,7 +3,7 @@ import copy as cp
 import pickle
 
 import numpy as np
-from mmcv.fileio import FileClient
+from mmengine.fileio.file_client import FileClient
 from scipy.stats import mode
 
 from ..builder import PIPELINES

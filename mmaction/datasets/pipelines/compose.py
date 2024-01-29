@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from collections.abc import Sequence
 
-from mmcv.utils import build_from_cfg
+from mmaction.registry import build_from_cfg
 
 from ..builder import PIPELINES
 from .augmentations import PytorchVideoTrans, TorchvisionTrans
