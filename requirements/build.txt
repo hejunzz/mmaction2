@@ -4,5 +4,5 @@ matplotlib
 numpy>=1.21.5
 # opencv-contrib-python
 Pillow
-scipy==1.6.0
+scipy==1.13.0
 torch>=1.3
